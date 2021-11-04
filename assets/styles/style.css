@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 .container {
@@ -33,7 +34,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   left: 0;
   right: 0;
-  z-index: 100
+  z-index: 100;
 }
 
 .navbar-container {
@@ -263,6 +264,7 @@ body {
 /* PAGE 1 HEADER SECTION */
 
 #image-banner-container {
+  margin-top: var(--navbar-height);
   background-image: url(../images/landing_page_sunrise.jpg);
   background-position: center;
   background-size: cover;
@@ -276,12 +278,10 @@ body {
 
 h1 {
   color: black;
-  font-size: 40px;
+  font-size: 37px;
   letter-spacing: 3px;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin: 0px 30px 30px 30px;
   text-align: center;
 }
 
@@ -289,9 +289,7 @@ p {
   color: black;
   font-size: 18px;
   font-family: 'Karla', sans-serif;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 30px;
+  margin: 0px 30px 30px 30px;
   text-align: center;
 }
 
