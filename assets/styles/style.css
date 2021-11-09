@@ -213,15 +213,12 @@ body {
   }
 }
 
-
 @media screen and (max-width: 799px) {
-  /* NAV BAR - dropdown menu */
   .dropdown-content {
     min-width: 160px;
     z-index: 1;
   }
 }
-
 
 .dropdown-content a {
   float: none;
@@ -272,7 +269,6 @@ body {
 
 
 /* PAGE 1 HEADER SECTION */
-
 #image-banner-container {
   margin-top: var(--navbar-height);
   background-image: url(../images/landing_page_sunrise.jpg);
@@ -295,19 +291,6 @@ h1 {
   text-align: center;
 }
 
-h1 {
-  color: black;
-  font-size: 37px;
-  letter-spacing: 3px;
-  font-family: 'Montserrat', sans-serif;
-  margin: 0px 30px 30px 30px;
-  text-align: center;
-}
-
-@media (max-width: 800px) {
-
-}
-
 p {
   color: black;
   font-size: 18px;
@@ -317,7 +300,7 @@ p {
 }
 
 #take-survey-button {
-  background: #282828;''
+  background: #282828;
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
@@ -330,6 +313,163 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+/* PAGE 1 TIMELINE - HORIZONTAL (DESKTOP/TABLET) */
+.timeline-container {
+  width: 80%;
+}
+
+/* .timeline-header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 5%;
+} */
+
+.timeline-toprow {
+  display: flex;
+  flex-direction: row;
+  margin-right: 13%;
+  margin-left: 13%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.timeline-steps {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.timeline-midrow {
+  display: flex;
+  flex-direction: row;
+  margin-right: 13%;
+  margin-left: 13%;
+}
+
+.timeline-line {
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  background-color: #A1B9ED;
+  margin-top: 15px;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.timeline-circle {
+  background-color: #9A9CE9;
+  border: 1px solid #9A9CE9;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin: auto;
+  z-index: 1;
+}
+
+.timeline-circle img {
+  margin: 6px;
+  width: 20px;
+  height: 20px;
+}
+
+.timeline-bottomrow {
+  display: flex;
+  flex-direction: row;
+  margin-right: 13%;
+  margin-left: 13%;
+}
+
+.timeline-text {
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  width: 27%;
+  margin-top: 10px;
+}
+
+.timeline-subhead {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.timeline-body {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+/* PAGE 1 TIMELINE - HORIZONTAL (DESKTOP/TABLET) */
+@media screen and (min-width: 800px) {
+  #timeline-container-vertical {
+    display: none;
+  }
+}
+@media screen and (max-width: 799px) {
+  #timeline-container {
+    display: none;
+  }
+  #timeline-container-vertical {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+  }
+  .timeline-leftcolm {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+  .timeline-line-vertical {
+    display: block;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 70px;
+    width: 5px;
+    height: 500px;
+    background-color: #A1B9ED;
+  }
+  .timeline-circle {
+    margin: auto;
+    margin-top: 70px;
+    margin-left: 35px;
+    z-index: 2;
+  }
+  .timeline-rightcolm {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    /* padding-top: 70px; */
+    width: 70%;
+  }
+  .timeline-steps {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    margin-left: 0%;
+  }
+  .timeline-text {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .timeline-subhead {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .timeline-body {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
 
 /* PAGE 1 "WHAT'S FUTUREPAIN" SECTION & "HOW THE SURVEY WORKS" SECTION*/
 .mainpage-explanation-container {
@@ -338,7 +478,7 @@ p {
   justify-content: space-around;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 .mainpage-explanation-container div {
@@ -365,7 +505,6 @@ p {
 }
 
 .mainpage-explanation-header {
-  color: black;
   font-size: 32px;
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
@@ -373,7 +512,6 @@ p {
 }
 
 .mainpage-explanation-body {
-  color: black;
   font-size: 18px;
   font-family: 'Karla', sans-serif;
   font-weight: normal;
