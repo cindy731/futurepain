@@ -252,19 +252,28 @@ body {
 }
 
 #berk-logo img {
-  width: 50%;
-  margin-left: 100px;
+  width: 10em;
+  margin-left: 40%;
 }
 
 .footer-right {
   display: flex;
   justify-content: space-around;
-  margin-right: 50px;
+  margin-right: 8%;
 }
 
 .footer-icons {
-  width: 100%;
-  margin-right: 50px;
+  padding: 15px;
+}
+
+.fas {
+  color: #2E3A59;
+  font-size: 2em;
+}
+
+.fab {
+  color: #2E3A59;
+  font-size: 2em;
 }
 
 
@@ -676,8 +685,9 @@ p {
   padding: 20px 15px 15px 20px;
 }
 
-hr.solid {
+hr.bio-card-divider {
   border-top: 1px solid black;
+  width: 80%;
   margin: 0px 25px 0px 25px;
 }
 
@@ -687,15 +697,12 @@ hr.solid {
   flex-direction: row;
   justify-content: center;
   flex-basis: 800px;
-  margin-top: 2%;
-  margin-bottom: 40px;
   margin-left: 10%;
   margin-right: 10%;
 }
 
 .research-pic img {
-  width: 400px;
-  margin-bottom: 20px;
+  width: 350px;
   margin-right: 20px;
 }
 
@@ -740,6 +747,15 @@ hr.solid {
   height: 100%;
 }
 
+hr.research-divider {
+  border-top: 1px solid #DEDEDE;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 1120px) {
   .research-container {
     display: flex;
@@ -755,8 +771,8 @@ hr.solid {
     margin-left: 10%;
     margin-right: 10%;
   }
-  .research-header {
-    text-align: center;
+  .research-body-divider {
+    display: none;
   }
 }
 
@@ -772,4 +788,84 @@ hr.solid {
     margin-left: 0px;
     width: 100%;
   }
+}
+
+/* CONTACT & FAQ PAGE */
+.faq-contact-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.faq {
+  flex-direction: column;
+  width: 50%;
+}
+
+.contact {
+  flex-direction: column;
+  width: 50%;
+}
+
+.faq-contact-header {
+  color: black;
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* CONTACT & FAQ PAGE - FAQ DROPDOWNS */
+.collapsible {
+  margin: 2rem 0 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.collapsible-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  border-top: 1px solid #ddd;
+}
+
+.collapsible-header i {
+  width: 2rem;
+  font-size: 1.6rem;
+  display: inline-block;
+  text-align: center;
+  margin-right: 1rem;
+}
+
+.keyboard-focused .collapsible-header:focus {
+  background-color: #eee;
+}
+
+.collapsible-body {
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2rem;
+  padding-top: 0;
+  margin-left: 5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.collapsible li.active i {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+}
+
+.collapsible li i {
+  transition: .1s all linear;
 }
