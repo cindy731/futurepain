@@ -807,6 +807,16 @@ hr.research-divider {
   width: 50%;
 }
 
+/* .contact {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0px 0px 500px 0px;
+  padding: 30px;
+  background-color: #E2EBFF;
+  border-radius: 5px
+} */
+
 @media screen and (max-width: 800px) {
   .faq {
     width: 100%;
@@ -889,13 +899,28 @@ hr.research-divider {
   margin-left: 5%;
 }
 
+.faq-contact-body {
+  background-color: #E2EBFF;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 30px 100px 0px 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.contact-divider {
+  height: 30px;
+  width: auto;
+  background-color: inherit;
+}
+
 .contact-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 30px;
 }
 
 .fas fa-map-marker-alt{
