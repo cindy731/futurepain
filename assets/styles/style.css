@@ -90,7 +90,7 @@ body {
   padding: 0;
 }
 .navbar-link:is(:focus, :hover) {
-  color: #797AB0;
+  color: #7699E5;
 }
 
 .navbar-logo img {
@@ -232,7 +232,7 @@ body {
 .dropdown-content a:hover {
   background-color: white;
   border-radius: 5px;
-  color: #797AB0;
+  color: #7699E5;
 }
 
 .dropdown:hover .dropdown-content {
@@ -292,7 +292,7 @@ body {
 }
 
 h1 {
-  color: black;
+  color: #332B29;
   font-size: 37px;
   letter-spacing: 3px;
   font-family: 'Montserrat', sans-serif;
@@ -301,7 +301,7 @@ h1 {
 }
 
 p {
-  color: black;
+  color: #332B29;
   font-size: 18px;
   font-family: 'Karla', sans-serif;
   margin: 0px 30px 30px 30px;
@@ -309,10 +309,10 @@ p {
 }
 
 #take-survey-button {
-  background: #282828;
-  color: white;
+  background-color: #332B29;
+  color: #FED6BF;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1.5px;
   border: none;
   padding: 18px 32px;
@@ -326,15 +326,6 @@ p {
 .timeline-container {
   width: 80%;
 }
-
-/* .timeline-header {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 32px;
-  color: black;
-  font-weight: 500;
-  text-align: center;
-  margin-top: 5%;
-} */
 
 .timeline-toprow {
   display: flex;
@@ -406,15 +397,17 @@ p {
 .timeline-subhead {
   display: flex;
   justify-content: center;
-  font-size: 18px;
+  font-family: 'Karla', sans-serif;
+  font-size: 22px;
   font-weight: 500;
 }
 
 .timeline-body {
   display: flex;
   justify-content: center;
+  font-family: 'Karla', sans-serif;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 400;
   margin-top: 10px;
 }
 
@@ -491,7 +484,6 @@ p {
 .mainpage-explanation-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 5%;
@@ -536,7 +528,7 @@ p {
 }
 
 .mainpage-explanation-button {
-  color: #A1B9ED;
+  color: #7699E5;
   font-family: 'Karla', sans-serif;
   font-size: 18px;
   letter-spacing: 2px;
@@ -548,7 +540,8 @@ p {
   border-radius: 5px;
   border-width: 2px;
   border-style: solid;
-  border-color: #A1B9ED;
+  border-color: #7699E5;
+  margin-bottom: 30px;
 }
 
 .mainpage-explanation-container img {
@@ -568,13 +561,16 @@ p {
   #howsurveyworks-pic {
     display: none;
   }
-}
-@media screen and (max-width: 800px) {
   #whatsfuturepain-pic {
     display: none;
   }
+  .mainpage-explanations {
+    margin: 0;
+  }
+  .mainpage-explanation-body {
+    margin-right: 0;
+  }
 }
-
 /* ABOUT PAGE */
 .top-page-container{
   display: flex;
@@ -605,8 +601,6 @@ p {
 
 /* ABOUT PAGE - BIOS*/
 .bio-container {
-  display: flex;
-  justify-content: center;
   margin-right: 60px;
   width: 100%;
   height: auto;
@@ -614,7 +608,7 @@ p {
 
 .bio-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   margin-right: 10%;
   margin-left: 10%;
@@ -831,6 +825,10 @@ hr.research-divider {
   text-align: center;
 }
 
+.faq-image img{
+  width: 90%;
+}
+
 /* CONTACT & FAQ PAGE - FAQ DROPDOWNS */
 .collapsible {
   margin: 2rem 0 1rem;
@@ -885,14 +883,6 @@ hr.research-divider {
 }
 
 /* CONTACT & FAQ PAGE - CONTACT INFO */
-.map img{
-  width: auto;
-  height: 400px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 30px;s
-}
-
 .contact-body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -911,4 +901,20 @@ hr.research-divider {
 .fas fa-map-marker-alt{
   color: #2E3A59;
   font-size: 1em;
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+    width: 100%;
+    padding: 30px;
+    margin: 100px 50px 0px 50px;
+    background-color: #E2EBFF;
+    border-radius: 5px
+  }
+  .faq-contact-header {
+    margin-top: 0px;
+  }
+  .faq {
+    margin-top: 50px;
+  }
 }
