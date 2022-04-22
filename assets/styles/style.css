@@ -51,7 +51,7 @@ body {
 
 .dropdown {
   overflow: hidden;
-  margin
+  margin: auto;
 }
 
 #nav-survey-button {
@@ -817,7 +817,7 @@ hr.research-divider {
   border-radius: 5px
 } */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .faq {
     width: 100%;
   }
@@ -901,7 +901,7 @@ hr.research-divider {
 
 .faq-contact-body {
   background-color: #E2EBFF;
-  padding: 30px;
+  padding: 5%;
   border-radius: 5px;
   margin: 30px 100px 0px 100px;
   display: flex;
@@ -928,13 +928,27 @@ hr.research-divider {
   font-size: 1em;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
   .contact {
-    width: 100%;
+    display: flex;
+    justify-content: center;
     padding: 30px;
-    margin: 100px 50px 0px 50px;
+    margin: 100px 10px 0px 10px;
     background-color: #E2EBFF;
     border-radius: 5px
+  }
+  .faq-contact-body {
+    margin: 0;
+    padding: 0;
+  }
+  .contact-row {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+    width: auto;
+  }
+  .contact-divider {
+    display: none;
   }
   .faq-contact-header {
     margin-top: 0px;
